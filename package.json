@@ -1,0 +1,44 @@
+{
+  "name": "@shinGangan/nuxt-nuxtui-templates",
+  "description": "Nuxt + Nuxt UI repository template.",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "shinGangan",
+    "url": "https://github.com/shinGangan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinGangan/nuxt-nuxtui-templates.git"
+  },
+  "engines": {
+    "node": "^20.15.0 || >= 22.0.0",
+    "npm": "🚨 Please use pnpm instead.",
+    "yarn": "🚨 Please use pnpm instead."
+  },
+  "packageManager": "pnpm@9.15.3",
+  "scripts": {
+    "clean": "rimraf node_modules src/node_modules",
+    "ui": "pnpm -C src",
+    "lint": "run-s lint:*",
+    "lint:ui": "pnpm ui lint",
+    "test": "run-s test:*",
+    "test:ui": "pnpm ui test",
+    "gen": "scaffdog generate -p .config/.scaffdog",
+    "gen:cm": "pnpm gen component"
+  },
+  "devDependencies": {
+    "@vitest/eslint-plugin": "^1.1.24",
+    "eslint": "^9.17.0",
+    "eslint-plugin-jsonc": "^2.18.2",
+    "eslint-plugin-tailwindcss": "^3.17.5",
+    "eslint-plugin-vue-scoped-css": "^2.9.0",
+    "eslint-plugin-vuejs-accessibility": "^2.4.1",
+    "eslint-plugin-yml": "^1.16.0",
+    "npm-run-all2": "^7.0.2",
+    "rimraf": "^6.0.1",
+    "scaffdog": "^4.1.0",
+    "vitest": "^2.1.8"
+  }
+}
